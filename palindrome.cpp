@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
-
-int main ()
+// The function for palindrome
+int main()
 {
     int n, r, sum = 0, temp;
     cout << "enter the number = ";
@@ -11,11 +11,11 @@ int main ()
     {
         r = n % 10;
         sum = (sum * 10) + r;
-        n = n/10;
+        n = n / 10;
     }
     if (temp == sum)
-    cout << "number is palindrome. ";
+        cout << "number is palindrome. ";
     else
-    cout << "number is not palindrome. ";
+        cout << "number is not palindrome. ";
     return 0;
 }
